@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astelverse</title>
+  <meta name="description" content="Astelverse Private Limited builds Risegap, Royawl and Doc Tools.">
+  <meta property="og:title" content="Astelverse">
+  <meta property="og:description" content="A universe of products: Risegap, Royawl and Doc Tools.">
+  <meta property="og:url" content="https://www.astelverse.com">
+  <link rel="canonical" href="https://www.astelverse.com">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e1530'/%3E%3Cpath d='M16 5l2.6 8.4L27 16l-8.4 2.6L16 27l-2.6-8.4L5 16l8.4-2.6z' fill='%23f5c86b'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #f7f6f2;
+      --surface: #ffffff;
+      --text: #141a2e;
+      --muted: #5b6275;
+      --line: #e3e1da;
+      --accent: #b8862b;
+      --star: #b8862b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0b1024;
+        --surface: #141a33;
+        --text: #eef0f7;
+        --muted: #a3a9bd;
+        --line: #252c4a;
+        --accent: #f5c86b;
+        --star: #f5c86b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    a { color: inherit; }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+    header { padding: 24px 0; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; letter-spacing: .2px; text-decoration: none; }
+    .brand svg { width: 28px; height: 28px; color: var(--star); }
+
+    .hero { padding: 56px 0 40px; }
+    .hero h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 0 0 16px; letter-spacing: -.5px; }
+    .hero h1 span { color: var(--accent); }
+    .hero p { font-size: 18px; color: var(--muted); max-width: 620px; margin: 0; }
+
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; padding: 24px 0 64px; }
+    .card {
+      display: flex; flex-direction: column; gap: 12px;
+      background: var(--surface); border: 1px solid var(--line); border-radius: 18px;
+      padding: 24px; text-decoration: none;
+      transition: transform .15s ease, border-color .15s ease;
+    }
+    .card:hover { transform: translateY(-3px); border-color: var(--card); }
+    .mark {
+      width: 44px; height: 44px; border-radius: 12px; display: grid; place-items: center;
+      background: var(--card); color: #fff; font-weight: 700; font-size: 20px;
+    }
+    .card h2 { margin: 0; font-size: 21px; }
+    .card p { margin: 0; color: var(--muted); flex: 1; }
+    .visit { font-weight: 600; color: var(--card); }
+    .visit::after { content: " \2192"; }
+    @media (prefers-color-scheme: dark) { .visit { filter: brightness(1.5); } }
+
+    .about { border-top: 1px solid var(--line); padding: 40px 0; color: var(--muted); }
+    .about h3 { color: var(--text); margin: 0 0 8px; font-size: 18px; }
+    .about p { margin: 0 0 6px; max-width: 680px; }
+
+    footer { border-top: 1px solid var(--line); padding: 20px 0 32px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="/">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2l2 7 7 3-7 2-2 8-2-8-7-2 7-3z"/></svg>
+      Astelverse
+    </a>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <h1>A universe of <span>products</span>.</h1>
+      <p>Astelverse builds focused products for real people, from job platforms to everyday tools. Each one is built and run by Astelverse Private Limited.</p>
+    </section>
+
+    <!-- Products: add a new card here when a product launches. -->
+    <section class="products wrap" aria-label="Our products">
+      <a class="card" style="--card:#6B8E80" href="https://www.risegap.com" target="_blank" rel="noopener">
+        <div class="mark">R</div>
+        <h2>Risegap</h2>
+        <p>Jobs for career returners. People who took a career break meet employers who value their experience.</p>
+        <span class="visit">risegap.com</span>
+      </a>
+
+      <a class="card" style="--card:#6366F1" href="https://www.royawl.com" target="_blank" rel="noopener">
+        <div class="mark">R</div>
+        <h2>Royawl</h2>
+        <p>A private social network for distinguished people, plus Royawl Proxy VPN for secure, no-logs browsing.</p>
+        <span class="visit">royawl.com</span>
+      </a>
+
+      <!-- Doc Tools URL will change once it moves to its own domain. -->
+      <a class="card" style="--card:#C2703D" href="https://cropresizecompare.risegap.com" target="_blank" rel="noopener">
+        <div class="mark">D</div>
+        <h2>Doc Tools</h2>
+        <p>Crop, resize and watermark images and documents, turn them into a PDF, and compare text, all inside your browser.</p>
+        <span class="visit">Open Doc Tools</span>
+      </a>
+    </section>
+
+    <section class="about wrap">
+      <h3>About Astelverse</h3>
+      <p>Astelverse Private Limited is a company registered in India. The name comes from "astel" (star) and "verse" (universe): many products under one sky.</p>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    &copy; <span id="year">2026</span> Astelverse Private Limited. All rights reserved.
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
