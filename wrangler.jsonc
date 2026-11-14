@@ -1,8 +1,9 @@
 {
+  // Cloudflare Workers static assets. Build first: `npm run build`.
   "name": "astelverse",
   "compatibility_date": "2026-10-01",
   "assets": {
-    "directory": "./public",
-    "not_found_handling": "404-page"
+    "directory": "./dist/astelverse-web/browser",
+    "not_found_handling": "single-page-application"
   }
 }

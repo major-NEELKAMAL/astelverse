@@ -1,0 +1,30 @@
+/* Site-wide tokens and layout. Page-specific styles live next to each page. */
+:root {
+  --bg: #f7f6f2;
+  --surface: #ffffff;
+  --text: #141a2e;
+  --muted: #5b6275;
+  --line: #e3e1da;
+  --accent: #b8862b;
+  --star: #b8862b;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1024;
+    --surface: #141a33;
+    --text: #eef0f7;
+    --muted: #a3a9bd;
+    --line: #252c4a;
+    --accent: #f5c86b;
+    --star: #f5c86b;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: inherit; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }

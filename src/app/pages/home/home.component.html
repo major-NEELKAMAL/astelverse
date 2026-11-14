@@ -1,0 +1,21 @@
+<section class="hero wrap">
+  <h1>A universe of <span>products</span>.</h1>
+  <p>Astelverse builds focused products for real people, from job platforms to everyday tools. Each one is built and run by Astelverse.</p>
+</section>
+
+<section class="products wrap" aria-label="Our products">
+  @for (p of products; track p.name) {
+    <a class="card" [style.--card]="p.color" [href]="p.url" target="_blank" rel="noopener">
+      <div class="mark">{{ p.mark }}</div>
+      <h2>{{ p.name }}</h2>
+      <p>{{ p.description }}</p>
+      <span class="visit">{{ p.linkText }}</span>
+    </a>
+  }
+</section>
+
+<section class="about wrap">
+  <h3>About Astelverse</h3>
+  <p>Astelverse is in the final stage of incorporation in India, under the proposed name Astelverse Private Limited. Company registration is currently in process. The name comes from "astel" (star) and "verse" (universe): many products under one sky.</p>
+  <p>Contact: <a href="mailto:contact@astelverse.com">contact&#64;astelverse.com</a></p>
+</section>
