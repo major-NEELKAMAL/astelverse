@@ -44,4 +44,12 @@ export const PRODUCTS: Product[] = [
     linkText: 'caraimechanic.com',
     description: "Coming soon. Mechanic-reviewed car care guides for your exact model, with a route to a verified mechanic when a job isn't right for home.",
   },
+  {
+    name: 'Jagruk Janta',
+    mark: 'J',
+    color: '#7B2FF7',
+    url: 'https://www.jagrukjanta.com',
+    linkText: 'jagrukjanta.com',
+    description: 'Citizens report civic problems like potholes, garbage and water logging, vote on them and track them until they are fixed, with quick medical help in an emergency.',
+  },
 ];
